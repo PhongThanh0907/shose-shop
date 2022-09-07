@@ -1,0 +1,58 @@
+.button-animation {
+  position: relative;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.5s;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff3e03,
+    0 0 80px #ff3e03, 0 0 90px #ff3e03, 0 0 100px #ff3e03, 0 0 150px #ff3e03;
+  a {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  a:hover {
+    color: #fff;
+  }
+}
+
+.button-animation::before,
+.button-animation::after {
+  content: "";
+  border: 3px solid #ff3e03;
+  border-radius: 3px;
+  top: -6px;
+  bottom: -6px;
+  left: -6px;
+  right: -6px;
+  animation: rotating 4s infinite linear;
+  position: absolute;
+}
+
+.button-animation::after {
+  animation-delay: 2s;
+}
+
+.button-animation:hover {
+  background-color: #ff3e03;
+}
+
+@keyframes rotating {
+  0% {
+    clip-path: inset(90% 0 0 0);
+  }
+  25% {
+    clip-path: inset(0 90% 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 90% 0);
+  }
+  75% {
+    clip-path: inset(0 0 0 90%);
+  }
+  100% {
+    clip-path: inset(90% 0 0 0);
+  }
+}

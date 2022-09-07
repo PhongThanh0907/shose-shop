@@ -1,0 +1,55 @@
+.Sneaker__Item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+.pagination {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  gap: 30px;
+  li {
+    display: flex;
+  }
+  .previous {
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: red;
+    padding: 2px 12px;
+    display: flex;
+  }
+  .previous {
+    a:hover {
+      color: white;
+    }
+  }
+  .next {
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: red;
+    padding: 2px 12px;
+    display: flex;
+  }
+  .next {
+    a:hover {
+      color: white;
+    }
+  }
+  li {
+    padding: 1px 12px;
+    transition: all 0.5s;
+    border: #ff3e03;
+  }
+  li:hover {
+    border: 1px solid #ff3e03;
+    border-radius: 50%;
+    padding: 1px 12px;
+    box-shadow: 0 0 5px #ff3e03, 0 0 25px #ff3e03, 0 0 50px #ff3e03,
+      0 0 200px #ff3e03;
+    cursor: pointer;
+  }
+}

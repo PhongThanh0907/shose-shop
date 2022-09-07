@@ -1,0 +1,46 @@
+#banner {
+  padding-top: 100px;
+  .banner__carousel {
+    img {
+      height: 620px;
+    }
+    .carousel-caption {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* responsive web */
+@media screen and (max-width: 740px) {
+  #banner {
+    padding-top: 60px !important;
+    .banner__carousel {
+      .carousel-caption {
+        margin-bottom: 18px !important;
+        .button-animation {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+      img {
+        height: 280px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #banner {
+    .banner__carousel {
+      .button-animation {
+        a {
+          font-size: 24px;
+        }
+      }
+      img {
+        height: 460px;
+      }
+    }
+  }
+}

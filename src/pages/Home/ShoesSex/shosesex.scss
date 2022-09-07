@@ -1,0 +1,46 @@
+#sex {
+  background-color: white;
+  padding: 50px 0;
+  .Shoses__Sex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    .Sex__Col {
+      position: relative;
+      .Shoses__Men {
+        img {
+          border-radius: 0px 60px 0px 0;
+        }
+      }
+      .Shoses__Woman {
+        img {
+          border-radius: 0px 0px 0px 60px;
+        }
+      }
+      .Sex__Title {
+        position: absolute;
+        font-size: 45px;
+        color: black;
+        font-weight: 600;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        .buttonlight {
+          a {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .buttonlight{
+    display: flex;
+    a{
+      padding: 5px 15px !important;
+      font-size: 20px !important;
+    }
+  }
+} 

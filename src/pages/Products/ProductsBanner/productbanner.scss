@@ -1,0 +1,15 @@
+#productsbanner {
+  padding-top: 100px;
+  .ProductsB__Content {
+    background-image: url("../../../../public/img/product-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ProductB__Title {
+      text-align: center;
+    }
+  }
+}

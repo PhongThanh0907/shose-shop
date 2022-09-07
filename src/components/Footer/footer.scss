@@ -1,0 +1,59 @@
+#footer {
+  background-image: url("../../../public/img/background-promotion.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  .Footer__Logo {
+    text-align: center;
+    img {
+      width: 10%;
+    }
+  }
+  .Footer__Content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    .Footer__Col {
+      h2 {
+        font-weight: 700;
+        margin: 20px 0;
+      }
+      span {
+        display: flex;
+        p {
+          margin-left: 10px;
+        }
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      .Footer__Icon {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .Footer__Content {
+    grid-template-columns: repeat(1, 1fr) !important;
+    h2 {
+      font-size: 20px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+  .Footer__Content {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}

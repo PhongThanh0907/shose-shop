@@ -1,0 +1,156 @@
+#promotion {
+  padding: 80px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../../public/img/banner-sale-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .Promotion__Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+    .Promotion__Title {
+      text-align: center;
+      h1 {
+        font-size: 60px;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      h4 {
+        font-size: 35px;
+        color: red;
+        font-weight: 700;
+      }
+      button {
+        border-radius: 10px;
+        padding: 6px 40px;
+        background: linear-gradient(
+          to right,
+          #de3700 0%,
+          #f44336 51%,
+          #ff3e03 100%
+        );
+        border: 1px solid transparent;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        background-size: 200%;
+        transition: all 0.5s ease-in-out;
+      }
+      button:hover {
+        background-position: right center;
+        box-shadow: 0 0 5px #ff3e03, 0 0 25px #ff3e03, 0 0 50px #ff3e03,
+          0 0 200px #ff3e03;
+      }
+      .Promotion__Countdown {
+        font-size: 30px;
+        color: white;
+        font-weight: 700;
+        background: red;
+        width: 280px;
+        margin: auto;
+        border-radius: 10px;
+      }
+    }
+    .Promotion__Img {
+      .Shoes__Img {
+        width: 80%;
+        position: relative;
+        animation: rotate 5s linear 1s infinite alternate;
+      }
+      .Shoes__Img::before {
+        border: 4px solid #ff3e03;
+        border-radius: 8px;
+        content: "";
+        height: 100%;
+        position: absolute;
+        right: -20px;
+        top: 18px;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        position: relative;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #promotion {
+    padding: 30px 0 !important;
+    .Promotion__Content {
+      .Promotion__Title {
+        .Promotion__Countdown {
+          width: 60% !important;
+          font-size: 12px !important;
+        }
+        h1 {
+          font-size: 15px !important;
+        }
+        h3 {
+          font-size: 14px !important;
+        }
+        h4 {
+          font-size: 12px !important;
+        }
+        span {
+          display: none;
+        }
+        br {
+          display: none !important;
+        }
+        button {
+          padding: 2px 20px !important;
+          margin-top: 0px !important;
+          font-size: 10px !important;
+        }
+      }
+    }
+    .Shoes__Img {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+  .Promotion__Title {
+    h1 {
+      font-size: 40px !important;
+    }
+    h3 {
+      font-size: 35px !important;
+    }
+    h4 {
+      font-size: 28px !important  ;
+    }
+  }
+}
